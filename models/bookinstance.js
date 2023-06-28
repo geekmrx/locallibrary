@@ -8,7 +8,7 @@ const BookInstanceSchema = new Schema({
     status: {
         type: String,
         required: true,
-        enum: ["Available", "Maintencance", "Loaned", "Reserved"],
+        enum: ["Available", "Maintenance", "Loaned", "Reserved"],
         defautl: "Maintenance"
     },
     due_back: { type: Date, default: Date.now },
