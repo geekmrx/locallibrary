@@ -1,6 +1,11 @@
+
+// usaremos posteriormente para acessar e atualizar nosos dados
 const Author = require("../models/author");
+
+// usaremos para capturar quaisquer exceptions thrown em nossass route handler functions
 const asyncHandler = require("express-async-handler");
 
+// Exports functions para cada um dos URLs que desejamos handle
 // Display list of all Authors.
 exports.author_list = asyncHandler(async (req, res, next) => {
   res.send("NOT IMPLEMENTED: Author list");
