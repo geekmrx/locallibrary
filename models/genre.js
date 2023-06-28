@@ -13,7 +13,7 @@ const GenreSchema = new Schema({
 // Nós declaramos uma virtual para o GenreSchema nomeada "url" que 
 // return o absolute URL necessário para obter a instância específica do medel
 // Usaremos a virtual property em nossos templates sempre que precisarmos
-// obter(get) um link em particular genre
+// obter um link em particular genre
 GenreSchema.virtual("url").get(function() {
   return `/catalog/genre/${this._id}` // absolute URL
 })
